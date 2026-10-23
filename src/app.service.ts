@@ -6,8 +6,8 @@ export class AppService {
     return '[Nestjs] Hello World!';
   }
 
-  getStatus(): string {
-    return `[Server] Server is running on port ${process.env.PORT}.`
+  getStatus() {
+    return { messagem: `[Server] Server is running on port ${process.env.PORT}.`}
   }
 
 }
