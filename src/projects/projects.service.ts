@@ -26,8 +26,8 @@ export class ProjectsService {
 
   }
 
-  findAll(): Promise<Project[]> {
-    return this.projectRepository.find();
+  async findAll(): Promise<Project[]> {
+    return await this.projectRepository.find();
   }
 
   findOne(id: number) {
