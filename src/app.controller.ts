@@ -11,7 +11,7 @@ export class AppController {
   }
   
   @Get('/status')
-  getStatus(): string {
+  getStatus() {
     return this.appService.getStatus();
   }
 
